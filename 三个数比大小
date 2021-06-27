@@ -20,3 +20,26 @@ int main(void)
          else q=t;	
        return(q);	
    }	
+   
+   //或者
+   
+   #include <stdio.h>
+int m;
+int asd(int x,int y,int z);
+int main(void)
+{ 
+	int a,b,c;
+    printf("/nEnter three number:");
+	scanf("%d,%d,%d",&a,&b,&c);
+	m=asd(a,b,c);
+   printf("asd:%d\n",m);
+}
+   int asd(int x,int y,int z)
+   {
+       int t=0,s=0;
+         if (x>y) t=x;
+         else t=y;
+         if (t>z) s=y;
+         else s=z;
+       return(s);
+   }
